@@ -1,5 +1,4 @@
-from utils.all_imports import *
-
+from studies.gap_scanner import run_gap_scanner
 
 class TradingSymbolProcessor:
     def __init__(self, interval):
@@ -227,12 +226,6 @@ class TradingSymbolProcessor:
 
     def run_gap_scanner(self):
         return run_gap_scanner(self)
-
-    def run_black_horse(self):
-        return run_black_horse(self)
-
-    def run_rsihl_alerts(self):
-        return run_rsihl_alerts(self)
 
 
     def run(self):
